@@ -1,4 +1,6 @@
 //app.js
+import { request } from './utils/request.js';
+
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -9,6 +11,12 @@ App({
     // 登录
     wx.login({
       success: res => {
+        request({
+          url: '/',
+          success: function(res) {
+            console.log(res)
+          }
+        })
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
