@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/history/history"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "牛牛德州扑克排行榜",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#bbb",
+    "selectedColor": "#2196F3",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史",
+        "iconPath": "/img/tabbar/history.png",
+        "selectedIconPath": "/img/tabbar/history-active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/img/tabbar/home.png",
+        "selectedIconPath": "/img/tabbar/home-active.png"
+      }
+    ]
+  }
+}
